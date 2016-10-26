@@ -2,6 +2,7 @@
 
 import BaseHTTPServer
 import SocketServer
+import datetime
 import errno
 import os
 import signal
@@ -21,7 +22,7 @@ class Handler(BaseHTTPServer.BaseHTTPRequestHandler):
 
         # Get current timestamp in RFC3339
         timestamp = datetime.datetime.utcnow()
-        timestamp = date.isoformat('T') + 'Z'
+        timestamp = timestamp.isoformat('T') + 'Z'
 
         # Generate our json body
         body = json.dumps({
