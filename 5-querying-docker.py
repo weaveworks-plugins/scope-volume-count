@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+from docker import Client
 import BaseHTTPServer
 import SocketServer
 import datetime
@@ -34,9 +35,9 @@ class Handler(BaseHTTPServer.BaseHTTPRequestHandler):
         timestamp = timestamp.isoformat('T') + 'Z'
 
         # Fetch and convert data to scope data model
-        new = {}
+        nodes = {}
         for container_id, volume_count in container_volume_counts().iteritems():
-            new["%s;<container>" % (container_id)] = {
+            nodes["%s;<container>" % (container_id)] = {
                 'latest': {
                     'volume_count': {
                         'timestamp': timestamp,
