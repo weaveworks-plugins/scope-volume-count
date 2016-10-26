@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-from collections import namedtuple
 from docker import Client
 import BaseHTTPServer
 import SocketServer
