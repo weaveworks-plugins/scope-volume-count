@@ -33,7 +33,9 @@ def mkdir_p(path):
             raise
 
 def main():
+    # Ensure the socket directory exists
     mkdir_p(os.path.dirname(PLUGIN_UNIX_SOCK))
+    # Listen for connections on the unix socket
     server = SocketServer.UnixStreamServer(PLUGIN_UNIX_SOCK, Handler)
     server.serve_forever()
 

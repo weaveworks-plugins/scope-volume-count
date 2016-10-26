@@ -125,8 +125,11 @@ def main():
 
     start_update_loop()
 
+    # Ensure the socket directory exists
     mkdir_p(os.path.dirname(PLUGIN_UNIX_SOCK))
+    # Remove existing socket in case it was left behind
     delete_socket_file()
+    # Listen for connections on the unix socket
     server = SocketServer.UnixStreamServer(PLUGIN_UNIX_SOCK, Handler)
     try:
         server.serve_forever()
