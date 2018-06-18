@@ -31,13 +31,8 @@ cd scope-volume-count; make;
 **Note** If Scope Volume Count plugin has been registered by Scope, you will see it in the list of `PLUGINS` in the bottom right of the UI (see the rectangle in the above figure).
 The measured value is showed in the *STATUS* section (see the circle in the above figure).
 
-## <a name="help"></a>Getting Help
+## Getting Help
 
-If you have any questions about, feedback for or problems with `scope-volume-count`:
-
-- Invite yourself to the <a href="https://weaveworks.github.io/community-slack/" target="_blank"> #weave-community </a> slack channel.
-- Ask a question on the <a href="https://weave-community.slack.com/messages/general/"> #weave-community</a> slack channel.
-- Send an email to <a href="mailto:weave-users@weave.works">weave-users@weave.works</a>
-- <a href="https://github.com/weaveworks-plugins/scope-volume-count/issues/new">File an issue.</a>
-
-Your feedback is always welcome!
+We love hearing from you and encourage you to join our community. For more
+information on how to get help or get in touch, see [Scope's help
+section](https://github.com/weaveworks/scope/#help).
