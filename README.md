@@ -1,4 +1,4 @@
-# Scope Volume Count Plugin
+# DEPRECATED: Scope Volume Count Plugin
 
 The Scope Volume Count plugin is a Python application that asks docker for the the number of mounted volumes for each container, providing **container-level** count in the [Weave Scope](https://github.com/weaveworks/scope) UI.
 
